@@ -12,13 +12,13 @@ docker run --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210
 
 ## Supported Env Vars :book:
 
-| Key                         | Description                                                            | Default           |
-|-----------------------------|------------------------------------------------------------------------|-------------------|
-| `CLUSTER_ADMIN_USERNAME`    | Cluster admin username                                                 | `couchbase-admin` |
-| `CLUSTER_ADMIN_PASSWORD`    | Cluster admin password                                                 | `couchbase`       |
-| `CLUSTER_NAME`              | Cluster name                                                           | `defaultCluster`  |
-| `CLUSTER_MEMORY_SIZE`       | Cluster memory size                                                    | `1024`            |
-| `CLUSTER_INDEX_MEMORY_SIZE` | Cluster index memory quota                                             | `512`             |
-| `BUCKET_NAME`               | Cluster default bucket name, if not providedbucket will not be created | --                |
-| `BUCKET_USERNAME`           | Username to access buckets                                             | `couchbase`       |
-| `BUCKET_PASSWORD`           | password to access buckets                                             | `couchbase`       |
+| Key                         | Description                                                             | Default           |
+|-----------------------------|------------------------------------------------------------------------ |-------------------|
+| `CLUSTER_ADMIN_USERNAME`    | Cluster admin username                                                  | `couchbase-admin` |
+| `CLUSTER_ADMIN_PASSWORD`    | Cluster admin password                                                  | `couchbase`       |
+| `CLUSTER_NAME`              | Cluster name                                                            | `defaultCluster`  |
+| `CLUSTER_MEMORY_SIZE`       | Cluster memory size                                                     | `1024`            |
+| `CLUSTER_INDEX_MEMORY_SIZE` | Cluster index memory quota                                              | `512`             |
+| `BUCKET_NAME`               | Cluster default bucket name, if not provided bucket will not be created | --                |
+| `BUCKET_USERNAME`           | Username to access buckets                                              | `couchbase`       |
+| `BUCKET_PASSWORD`           | password to access buckets                                              | `couchbase`       |
