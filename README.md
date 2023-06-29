@@ -7,7 +7,7 @@ This docker image extends the official [Couchbase](https://hub.docker.com/r/couc
 ## Running :fire:
 Just paste in you terminal the following:
 ```console
-docker run --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 --rm couchbase-dev:7.2.0
+docker run --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 --rm ghcr.io/tiecat-org/couchbase-dev:latest
 ```
 
 ## Supported Env Vars :book:
