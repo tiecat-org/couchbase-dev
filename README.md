@@ -1,7 +1,7 @@
 # Couchbase Dev Docker Image
 
-Couchbase image for local development.
-This docker image extends the official [Couchbase](https://hub.docker.com/r/couchbase/server) docker image Community Edition (`couchbase/server:community`).
+Couchbase pre-configured docker image for local development.
+This docker image extends the official [Couchbase](https://hub.docker.com/r/couchbase/server) Community Edition (`couchbase/server:community`).
 
 
 ## Running :fire:
