@@ -37,7 +37,7 @@ couchbase-cli cluster-init -c 127.0.0.1 --cluster-username $CLUSTER_ADMIN_USERNA
 if [[ -v BUCKET_NAME ]]; then
     logger.info "Creating bucket < $BUCKET_NAME >..."
         couchbase-cli bucket-create -c 127.0.0.1 --username $CLUSTER_ADMIN_USERNAME --password $CLUSTER_ADMIN_PASSWORD \
-        --bucket-type couchbase --bucket-ramsize 250 --bucket $bucket
+        --bucket-type couchbase --bucket-ramsize 250 --bucket $BUCKET_NAME
 fi
 
 couchbase-cli user-manage -c 127.0.0.1:8091 -u $CLUSTER_ADMIN_USERNAME -p $CLUSTER_ADMIN_PASSWORD --set \
