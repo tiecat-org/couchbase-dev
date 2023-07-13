@@ -34,7 +34,7 @@ couchbase-cli cluster-init -c 127.0.0.1 --cluster-username $CLUSTER_ADMIN_USERNA
 --cluster-name $CLUSTER_NAME --cluster-ramsize $CLUSTER_MEMORY_SIZE --cluster-index-ramsize $CLUSTER_INDEX_MEMORY_SIZE --services data,index,query,fts \
 --index-storage-setting default
 
-if [[ -v $BUCKET_NAME ]]; then
+if [[ -v BUCKET_NAME ]]; then
     logger.info "Creating bucket < $BUCKET_NAME >..."
         couchbase-cli bucket-create -c 127.0.0.1 --username $CLUSTER_ADMIN_USERNAME --password $CLUSTER_ADMIN_PASSWORD \
         --bucket-type couchbase --bucket-ramsize 250 --bucket $bucket
